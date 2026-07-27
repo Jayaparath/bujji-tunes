@@ -1043,3 +1043,75 @@ body{
 .bottom-text{
     margin-top:8px;
 }
+/* ==========================
+   SOCIAL BUTTONS MOBILE FIX
+========================== */
+
+.social-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    width:100%;
+}
+
+.social-btn{
+
+    width:100%;
+    max-width:260px;
+
+    height:48px;
+
+    border-radius:14px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.social-btn img{
+
+    width:22px;
+    height:22px;
+
+}
+
+.social-btn i{
+
+    font-size:22px;
+
+}
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:480px){
+
+.login-card,
+.signup-card{
+
+    width:92%;
+    max-width:350px;
+
+    padding:22px;
+
+}
+
+.social-btn{
+
+    max-width:250px;
+
+}
+
+}
