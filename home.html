@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BUJJI TUNES</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Background -->
+
+<div class="background"></div>
+
+<!-- Header -->
+
+<header>
+
+    <div class="logo">
+
+        <h2>🎧 BUJJI TUNES</h2>
+
+    </div>
+
+    <div class="header-icons">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <i class="fa-solid fa-user-circle"></i>
+
+    </div>
+
+</header>
+
+<!-- Welcome -->
+
+<section class="welcome">
+
+    <h1>Welcome Back 👋</h1>
+
+    <p>Enjoy Your Favorite Music</p>
+
+</section>
+
+<!-- Search -->
+
+<div class="search-box">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <input
+    type="text"
+    placeholder="Search songs, albums, artists">
+
+</div>
+
+<!-- Trending -->
+
+<section class="section-title">
+
+    🔥 Trending Songs
+
+</section>
+
+<div class="song-list">
+
+    <div class="song-card">
+
+        <img src="images/song1.jpg">
+
+        <h3>Perfect</h3>
+
+        <p>Ed Sheeran</p>
+
+    </div>
+
+    <div class="song-card">
+
+        <img src="images/song2.jpg">
+
+        <h3>Believer</h3>
+
+        <p>Imagine Dragons</p>
+
+    </div>
+
+    <div class="song-card">
+
+        <img src="images/song3.jpg">
+
+        <h3>Hukum</h3>
+
+        <p>Anirudh</p>
+
+    </div>
+
+</div>
+
+<!-- Recently Played -->
+
+<section class="section-title">
+
+❤️ Recently Played
+
+</section>
+
+<div class="recent-list">
+
+<div class="recent-item">
+
+<i class="fa-solid fa-music"></i>
+
+<span>Ordinary Person</span>
+
+</div>
+
+<div class="recent-item">
+
+<i class="fa-solid fa-music"></i>
+
+<span>Arabic Kuthu</span>
+
+</div>
+
+<div class="recent-item">
+
+<i class="fa-solid fa-music"></i>
+
+<span>Kaavaalaa</span>
+
+</div>
+
+</div>
+
+<!-- Mini Player -->
+
+<div class="mini-player">
+
+    <img src="images/song1.jpg" id="albumArt" class="album-art">
+
+    <div class="song-details">
+
+        <h4 id="songTitle">Perfect</h4>
+
+        <p id="artistName">Ed Sheeran</p>
+
+    </div>
+
+    <div class="controls">
+
+        <i class="fa-solid fa-backward-step" id="prevBtn"></i>
+
+        <i class="fa-solid fa-circle-play play" id="playBtn"></i>
+
+        <i class="fa-solid fa-forward-step" id="nextBtn"></i>
+
+    </div>
+
+</div>
+
+<audio id="audioPlayer">
+    <source src="songs/perfect.mp3" type="audio/mpeg">
+</audio>
+
+<div class="song-info">
+
+🎵 Hukum
+
+</div>
+
+<div class="controls">
+
+<i class="fa-solid fa-backward-step"></i>
+
+<i class="fa-solid fa-circle-play play"></i>
+
+<i class="fa-solid fa-forward-step"></i>
+
+</div>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<nav>
+
+<div>
+
+<i class="fa-solid fa-house"></i>
+
+<p>Home</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-compass"></i>
+
+<p>Browse</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-heart"></i>
+
+<p>Favorite</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-user"></i>
+
+<p>Profile</p>
+
+</div>
+
+</nav>
+
+<script src="home.js"></script>
+
+</body>
+
+</html>

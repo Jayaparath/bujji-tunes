@@ -1,0 +1,1045 @@
+/* =====================================
+        BUJJI TUNES v2
+          STYLE.CSS
+            PART 1
+===================================== */
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:'Poppins',sans-serif;
+
+    background:#050505;
+
+    color:#fff;
+
+}
+
+/* ===========================
+        BACKGROUND
+=========================== */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at top,
+    #222 0%,
+    #111 45%,
+    #000 100%);
+
+    z-index:-5;
+
+}
+
+/* ===========================
+          SMOKE
+=========================== */
+
+.smoke{
+
+    position:fixed;
+
+    inset:0;
+
+    opacity:.12;
+
+    filter:blur(100px);
+
+    background:
+    radial-gradient(circle,
+    rgba(255,255,255,.4),
+    transparent 70%);
+
+    animation:smokeMove 18s linear infinite;
+
+    z-index:-4;
+
+}
+
+@keyframes smokeMove{
+
+    0%{
+
+        transform:
+        translate(-120px,-80px);
+
+    }
+
+    50%{
+
+        transform:
+        translate(120px,80px);
+
+    }
+
+    100%{
+
+        transform:
+        translate(-120px,-80px);
+
+    }
+
+}
+
+/* ===========================
+        LOGIN CARD
+=========================== */
+
+.login-card{
+
+    width:360px;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:
+    1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+
+    0 0 25px rgba(255,255,255,.08);
+
+    animation:cardIntro .8s;
+
+}
+
+@keyframes cardIntro{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+
+    }
+
+}
+
+/* ===========================
+            LOGO
+=========================== */
+
+.logo{
+
+    text-align:center;
+
+}
+
+.logo h1{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:44px;
+
+    letter-spacing:8px;
+
+    color:white;
+
+    text-shadow:
+
+    0 0 10px white,
+
+    0 0 25px white;
+
+}
+
+.logo h2{
+
+    margin-top:4px;
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:22px;
+
+    letter-spacing:10px;
+
+}
+
+.logo p{
+
+    margin-top:8px;
+
+    font-size:13px;
+
+    color:#bbb;
+
+    letter-spacing:2px;
+
+}
+
+/* ===========================
+          INPUT
+=========================== */
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin: 18px 0;   /* Space between boxes */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.input-box input{
+
+    width:100%;
+
+    height:55px;
+   
+    padding:0 50px;
+    
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    background:#111;
+
+    color:white;
+
+    font-size:15px;
+
+    outline:none;
+    transition:.3s;
+
+}
+
+.input-box input:focus{
+
+    border-color:white;
+
+    box-shadow:
+
+    0 0 10px rgba(255,255,255,.4);
+
+}
+
+/* ===========================
+         INPUT ICONS
+=========================== */
+
+.icon{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#fff;
+
+    font-size:18px;
+
+    z-index:10;
+
+}
+
+.eye{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#bfbfbf;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    z-index:10;
+
+    transition:.3s;
+
+}
+
+.eye:hover{
+
+    color:#00ff66;
+
+}
+
+/* ===========================
+        LOGIN BUTTON
+=========================== */
+
+.login-btn{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:white;
+
+    color:black;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+    0 0 18px white;
+
+}
+/* =====================================
+        STYLE.CSS
+            PART 2
+===================================== */
+
+/* ===========================
+      CREATE ACCOUNT CARD
+=========================== */
+
+.signup-card{
+
+    width:340px;
+
+    padding:25px 30px;
+
+    border-radius:25px;
+
+    display:none;
+
+    flex-direction:column;
+
+   margin:12px 0;
+    align-items:center;
+
+
+    position:relative;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:0 0 25px rgba(255,255,255,.08);
+
+}
+
+/* ===========================
+     CREATE ACCOUNT BUTTON
+=========================== */
+
+.create-account-btn{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+    margin:12px auto;
+    border-radius:14px;
+     border:1px solid rgba(255,255,255,.2);
+
+    background:rgba(255,255,255,.05);
+
+    color:#fdf7f7;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.create-account-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 10px rgb(0, 183, 255);
+}
+
+/* ===========================
+        BOTTOM TEXT
+=========================== */
+
+.bottom-text{
+  margin-top:15px;
+    text-align:center;
+
+    font-size:14px;
+
+}
+
+.bottom-text a{
+
+    color:#00ff66;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.bottom-text a:hover{
+
+    text-shadow:0 0 10px #00ff66;
+
+}
+
+/* ===========================
+      SOCIAL LOGIN
+=========================== */
+
+.social-login{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.social-login p{
+
+    color:#aaa;
+
+    font-size:13px;
+
+    margin-bottom:10px;
+
+}
+
+.social-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:12px;
+
+}
+
+.social-btn{
+
+    flex:1;
+
+    height:50px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    background:rgba(255,255,255,.05);
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.social-btn img{
+
+    width:22px;
+
+    height:22px;
+
+}
+
+.social-btn i{
+
+    font-size:22px;
+
+}
+
+.google:hover{
+
+    box-shadow:0 0 20px #4285F4;
+
+}
+
+.apple:hover{
+
+    box-shadow:0 0 20px white;
+
+}
+
+/* ===========================
+        HEART RAIN
+=========================== */
+
+#heart-container{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+.heart{
+
+    position:absolute;
+
+    top:-40px;
+
+    animation:heartFall linear forwards;
+
+}
+
+@keyframes heartFall{
+
+    0%{
+
+        transform:translateY(-40px);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(110vh);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================
+       MUSIC NOTES
+=========================== */
+
+#music-container{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-3;
+
+}
+
+.music-note{
+
+    position:absolute;
+
+    color:rgba(255,255,255,.2);
+
+    animation:musicFloat linear forwards;
+
+}
+
+@keyframes musicFloat{
+
+    0%{
+
+        transform:translateY(110vh);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:.5;
+
+    }
+
+    100%{
+
+        transform:translateY(-120px) rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================
+         SPARKLES
+=========================== */
+
+#sparkle-container{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+.sparkle{
+
+    position:absolute;
+
+    width:4px;
+
+    height:4px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:0 0 10px white;
+
+    animation:sparkleMove 3s linear forwards;
+
+}
+
+@keyframes sparkleMove{
+
+    0%{
+
+        opacity:0;
+
+        transform:scale(.3);
+
+    }
+
+    30%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(-150px) scale(1.5);
+
+    }
+
+}
+/* =====================================
+        STYLE.CSS
+            PART 3
+===================================== */
+
+/* ===========================
+      BUTTERFLY CONTAINER
+=========================== */
+
+#butterfly-container{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:9999;
+
+}
+
+/* ===========================
+        BUTTERFLY
+=========================== */
+
+.butterfly{
+
+    position:absolute;
+
+    width:34px;
+
+    height:26px;
+
+    animation:flyAway 2s ease-out forwards;
+
+}
+
+.left-wing,
+.right-wing{
+
+    position:absolute;
+
+    width:17px;
+
+    height:24px;
+
+    background:linear-gradient(135deg,#ffffff,#d8d8d8);
+
+    box-shadow:
+    0 0 15px white,
+    0 0 25px rgba(255,255,255,.7);
+
+}
+
+.left-wing{
+
+    left:0;
+
+    border-radius:100% 0 100% 0;
+
+    transform-origin:right center;
+
+    animation:leftWing .18s infinite alternate;
+
+}
+
+.right-wing{
+
+    right:0;
+
+    border-radius:0 100% 0 100%;
+
+    transform-origin:left center;
+
+    animation:rightWing .18s infinite alternate;
+
+}
+
+.body{
+
+    position:absolute;
+
+    left:50%;
+
+    top:1px;
+
+    transform:translateX(-50%);
+
+    width:4px;
+
+    height:24px;
+
+    background:#222;
+
+    border-radius:20px;
+
+}
+
+@keyframes leftWing{
+
+    from{
+
+        transform:rotate(-35deg);
+
+    }
+
+    to{
+
+        transform:rotate(25deg);
+
+    }
+
+}
+
+@keyframes rightWing{
+
+    from{
+
+        transform:rotate(35deg);
+
+    }
+
+    to{
+
+        transform:rotate(-25deg);
+
+    }
+
+}
+
+@keyframes flyAway{
+
+    from{
+
+        opacity:1;
+
+        transform:
+        translate(0,0)
+        scale(.2)
+        rotate(0deg);
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:
+        translate(var(--x),var(--y))
+        scale(1.5)
+        rotate(720deg);
+
+    }
+
+}
+
+/* ===========================
+      BLACK FADE SCREEN
+=========================== */
+
+#screenFade{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#000;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.8s;
+
+    z-index:9998;
+
+}
+
+/* ===========================
+       ZOOM ANIMATION
+=========================== */
+
+.zoomOut{
+
+    animation:zoomOut .8s forwards;
+
+}
+
+.zoomIn{
+
+    animation:zoomIn .8s forwards;
+
+}
+
+@keyframes zoomOut{
+
+    0%{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:scale(.85);
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    0%{
+
+        opacity:0;
+
+        transform:scale(.85);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ===========================
+      LOGIN CLICK EFFECT
+=========================== */
+
+.login-btn.clicked{
+
+    animation:clickBtn .5s;
+
+}
+
+@keyframes clickBtn{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(.94);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ===========================
+    CARD HOVER EFFECT
+=========================== */
+
+.login-card:hover,
+.signup-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 30px rgba(255,255,255,.2);
+
+    transition:.4s;
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:480px){
+
+    .login-card,
+    .signup-card{
+
+        width:92%;
+
+        padding:28px;
+
+    }
+
+    .logo h1{
+
+        font-size:36px;
+
+    }
+
+    .logo h2{
+
+        font-size:18px;
+
+        letter-spacing:6px;
+
+    }
+
+    .social-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .social-btn{
+
+        width:100%;
+
+    }
+
+}
+.logo{
+    margin-bottom:4px;
+}
+
+.logo p{
+    margin-top:4px;
+    margin-bottom:8px;
+}
+
+.input-box{
+    margin:10px 0;
+}
+
+.create-account-btn{
+    margin:12px auto;
+}
+
+.bottom-text{
+    margin-top:8px;
+}
